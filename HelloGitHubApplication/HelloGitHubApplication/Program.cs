@@ -98,6 +98,33 @@ namespace EkaOlioprojekti
             } while (true);
             */
 
+            //t6
+            /*
+            int matka;
+            float maara;
+            float maksu;
+            const float kulutus = 0.0702f;
+            const float hinta = 1.595f;
+            Console.WriteLine("Please enter length of drive in kilometres: ");
+            matka = int.Parse(Console.ReadLine());
+            maara = matka * kulutus;
+            maksu = maara * hinta;
+            Console.WriteLine(maara + " liters of gasoline will be used, it will cost you " + maksu + " euros.");
+            */
+
+            //t7
+            /*do
+            {
+                int vuosi;
+                Console.WriteLine("Please enter year: ");
+                vuosi = int.Parse(Console.ReadLine());
+                if (vuosi % 4 != 0 || (vuosi % 100 == 0 && vuosi % 400 != 0))
+                {
+                    Console.WriteLine("Year isn't a leap year");
+                }
+                else Console.WriteLine("Year is a leap year");
+            } while (true);
+            */
             //t8
 
             /*do
@@ -183,21 +210,17 @@ namespace EkaOlioprojekti
             Console.ReadLine();
             */
 
-            //t12
-            /*
+            //t13
+
             const int numValues = 5;
-            int[] numbers = new int[numValues] { 8, 10, 2, 6, 3 };
-
-            Array.Sort(numbers);
-
-            int sum = 0;
-            for (int i=1; i<numbers.Length - 1; i++)
+            int[] numbers = new int[numValues];
+            for (int i = 0; i < numValues; i++)
             {
-                sum += numbers[i];
-                Console.WriteLine(numbers[i]);
+                Console.Write("Enter score: ");
+                numbers[i] = int.Parse(Console.ReadLine());
             }
-            Console.Write(sum);
-            */
+            
+
 
             //t14
 
@@ -282,15 +305,28 @@ namespace EkaOlioprojekti
             */
 
             //t16
-
+            /*
             Random rnd = new Random();
             int luku = rnd.Next(0, 100);
             int arvaus = 101;
             int maara = 0;
             while (arvaus != luku)
             {
-
+                Console.WriteLine("Try to guess my number, puny human: ");
+                arvaus = int.Parse(Console.ReadLine());
+                if (arvaus > luku)
+                {
+                    Console.WriteLine("your number is too big");
+                }
+                else if (arvaus < luku)
+                {
+                    Console.WriteLine("your number is too small");
+                }
+                maara++;
             }
+            Console.WriteLine("Congratulations, it only took you " + maara + " tries to guess my number! You are truly a superior being.");
+            */
+
 
         }
 
