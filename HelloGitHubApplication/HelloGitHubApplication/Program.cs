@@ -98,6 +98,40 @@ namespace EkaOlioprojekti
             } while (true);
             */
 
+            //t8
+
+            /*do
+            {
+                int luku1, luku2, luku3;
+                Console.Write("Please enter the first number: ");
+                luku1 = int.Parse(Console.ReadLine());
+                Console.Write("Please enter the second number: ");
+                luku2 = int.Parse(Console.ReadLine());
+                Console.Write("Please enter the third number: ");
+                luku3 = int.Parse(Console.ReadLine());
+                if (luku1 > luku2 && luku1 > luku3) Console.WriteLine("Suurin luku on " + luku1);
+                else if (luku2 > luku1 && luku2 > luku3) Console.WriteLine("Suurin luku on " + luku2);
+                else if (luku3 > luku1 && luku3 > luku2) Console.WriteLine("Suurin luku on " + luku3);
+            } while (true);*/
+
+            //t9
+
+            /*do
+            {
+                int luku, luku2;
+                luku2 = 0;
+                luku = 1;
+                while (luku != 0)
+                {
+                    Console.WriteLine("Enter a number: ");
+                    luku = int.Parse(Console.ReadLine());
+                    luku2 = luku2 + luku;
+                }
+
+                Console.WriteLine("The sum of numbers is " + luku2);
+            } while (true);
+            */
+
             //t10
 
             /*const int numValues = 9;
@@ -110,6 +144,24 @@ namespace EkaOlioprojekti
                     Console.WriteLine(numbers[i]);
                 }
             }*/
+
+            //t11
+
+            /*
+            int rivi, oksat;
+            Console.WriteLine("Please enter number of rows: ");
+            rivi = int.Parse(Console.ReadLine());
+            oksat = 1;
+
+            for (int i = 0; i < rivi; i++)
+            {
+                Console.WriteLine("*");
+                for (int o = 0; o < oksat; o++) {
+                    Console.Write("*");
+                }
+                oksat++;
+            }
+            */
 
             //t12
             /*
@@ -147,6 +199,101 @@ namespace EkaOlioprojekti
             Console.Write(sum);
             */
 
+            //t14
+
+            /*
+            int arvo, nolla, yksi, kaksi, kolme, nelja, viisi;
+            nolla = 0;
+            yksi = 0;
+            kaksi = 0;
+            kolme = 0;
+            nelja = 0;
+            viisi = 0;
+            arvo = 0;
+            while (arvo != 10)
+            {
+                Console.Write("Please enter score 0, 1, 2, 3, 4 or 5: ");
+                arvo = int.Parse(Console.ReadLine());
+                switch (arvo)
+                {
+                    case 0:
+                        nolla++;
+                        break;
+                    case 1:
+                        yksi++;
+                        break;
+                    case 2:
+                        kaksi++;
+                        break;
+                    case 3:
+                        kolme++;
+                        break;
+                    case 4:
+                        nelja++;
+                        break;
+                    case 5:
+                        viisi++;
+                        break;
+
+                }
+            }
+                Console.WriteLine("Scores:");
+                Console.Write("0: ");
+                while(nolla > 0)
+                {
+                    Console.Write("*");
+                nolla--;
+                }
+            Console.WriteLine();
+                Console.Write("1: ");
+                while (yksi > 0)
+                {
+                    Console.Write("*");
+                    yksi--;
+                }
+            Console.WriteLine();
+            Console.Write("2: ");
+            while (kaksi > 0)
+            {
+                Console.Write("*");
+                kaksi--;
+            }
+            Console.WriteLine();
+            Console.Write("3: ");
+            while (kolme > 0)
+            {
+                Console.Write("*");
+                kolme--;
+            }
+            Console.WriteLine();
+            Console.Write("4: ");
+            while (nelja > 0)
+            {
+                Console.Write("*");
+                nelja--;
+            }
+            Console.WriteLine();
+            Console.Write("5: ");
+            while (viisi > 0)
+            {
+                Console.Write("*");
+                viisi--;
+            }
+            */
+
+            //t16
+
+            Random rnd = new Random();
+            int luku = rnd.Next(0, 100);
+            int arvaus = 101;
+            int maara = 0;
+            while (arvaus != luku)
+            {
+
+            }
+
+        }
 
 
-            Console.ReadLine();
+    }
+}
