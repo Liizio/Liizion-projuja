@@ -211,7 +211,7 @@ namespace EkaOlioprojekti
             */
 
             //t13
-
+            /*
             const int numValues = 5;
             int[] numbers = new int[numValues];
             for (int i = 0; i < numValues; i++)
@@ -219,7 +219,7 @@ namespace EkaOlioprojekti
                 Console.Write("Enter score: ");
                 numbers[i] = int.Parse(Console.ReadLine());
             }
-            
+            */
 
 
             //t14
