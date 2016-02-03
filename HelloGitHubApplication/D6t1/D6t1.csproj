@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{25069F8E-02DD-4570-AF2D-33264D9F5C23}</ProjectGuid>
+    <ProjectGuid>{9B75CD0D-C6D7-4145-8B46-D259DE32EF2D}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>oliointia</RootNamespace>
-    <AssemblyName>oliointia</AssemblyName>
+    <RootNamespace>D6t1</RootNamespace>
+    <AssemblyName>D6t1</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

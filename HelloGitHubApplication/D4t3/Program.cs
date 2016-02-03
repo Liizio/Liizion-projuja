@@ -67,13 +67,43 @@ namespace D4t3
                 }
             }
 
+            public bool Power
+            {
+                get
+                {
+                    return Power;
+                }
+
+                set
+                {
+                    value = power;
+                }
+            }
+
         }
         static void Main(string[] args)
         {
+            Radio radio = new Radio();
+            radio.Power = true;
             do
             {
                 Console.Write("1. Print data\n2. Swith power\n3. Change volume\n4. Change frequency");
-
+                int caseSwitch = 1;
+                Console.WriteLine("Choose option: ");
+                caseSwitch = int.Parse(Console.ReadLine());
+                switch (caseSwitch)
+                {
+                    case 1:
+                        if (radio.Power == true) Console.WriteLine("Power is on");
+                        else if (radio.Power == false) Console.WriteLine("Power is off");
+                        break;
+                    case 2:
+                        Console.WriteLine("Case 2");
+                        break;
+                    default:
+                        Console.WriteLine("Default case");
+                        break;
+                }
             } while (true);
         }
     }
