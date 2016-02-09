@@ -32,7 +32,7 @@ namespace D6T2
         {
             Album mm = new Album { Artist = "Dire Straits", Title = "Making Movies"};
             mm.Songs.Add("1", "Tunnel of love");
-            mm.Songs.Add("2", "Tomeo and Juliet");
+            mm.Songs.Add("2", "Romeo and Juliet");
             mm.Songs.Add("3", "Skateaway");
             mm.Songs.Add("4", "Expresso love");
             mm.Songs.Add("5", "hand in hand");
