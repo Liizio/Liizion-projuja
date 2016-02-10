@@ -1,0 +1,44 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace D8t2
+{
+    class Product
+    {
+        public string Name { get; set; }
+        public double Price { get; set; }
+
+        public override string ToString()
+        {
+            return "Product: " + Name + " Price: " + Price + "e";
+        }
+
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            List<Product> products = new List<Product>();
+
+            Product peasoup = new Product { Name = "Pea Soup", Price = 1.5 };
+            
+            Product pizza = new Product { Name = "Frozen Pizza", Price = 4.5 };
+
+            Product battery = new Product { Name = "AA-Batteries", Price = 3.5 };
+
+            products.Add(peasoup);
+            products.Add(pizza);
+            products.Add(battery);
+
+
+            Console.WriteLine("All products in basket: ");
+            foreach (Product product in products)
+            {
+                Console.WriteLine(product.ToString());
+            }
+        }
+    }
+}
