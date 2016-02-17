@@ -1,0 +1,63 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace D8t1
+{
+    class Die
+    {
+        public int Num { get; set; }
+        public int One { get; set; }
+        public int Two { get; set; }
+        public int Three { get; set; }
+        public int Four { get; set; }
+        public int Five { get; set; }
+        public int Six { get; set; }
+        Random rnd = new Random();
+
+        public void Throw()
+        {
+            Num = rnd.Next(1, 7);
+            if (Num == 1) One++;
+            if (Num == 2) Two++;
+            if (Num == 3) Three++;
+            if (Num == 4) Four++;
+            if (Num == 5) Five++;
+            if (Num == 6) Six++;
+
+        }
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int amount;
+            
+            Die die = new Die { Num = 1 };
+
+            Console.WriteLine("Enter omount of throws: ");
+            amount = int.Parse(Console.ReadLine());
+            int amount2 = amount;
+            do
+            {
+                die.Throw();
+                amount--;
+            } while (amount > 0);
+
+            Console.WriteLine("Number of ones is: " + die.One);
+            Console.WriteLine("Number of twos is: " + die.Two);
+            Console.WriteLine("Number of threes is: " + die.Three);
+            Console.WriteLine("Number of fours is: " + die.Four);
+            Console.WriteLine("Number of fives is: " + die.Five);
+            Console.WriteLine("Number of sixes is: " + die.Six);
+
+            double all = (die.One + (die.Two * 2) + (die.Three * 3) + (die.Four * 4) + (die.Five * 5) + (die.Six * 6));
+            double avrg = (all / amount2);
+            Console.WriteLine("Average is: " + avrg);
+
+
+        }
+    }
+}
